@@ -7,7 +7,7 @@ const cors = require('cors');
 const api = express();
 
 api.use(cors({
-    origin: "http://localhost:3001",
+    origin: "*",
 }));
 
 const router = Router();

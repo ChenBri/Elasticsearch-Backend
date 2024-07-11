@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'production',
-  entry: './app.js',
+  entry: './netlify/functions/api.js',
   output: {
     path: path.join(__dirname, 'dist'),
     publicPath: '/',

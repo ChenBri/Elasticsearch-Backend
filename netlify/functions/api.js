@@ -1,9 +1,14 @@
-// YOUR_BASE_DIRECTORY/netlify/functions/api.ts
 
 import express, { Router } from "express";
 import serverless from "serverless-http";
 
+const cors = require('cors');
+
 const api = express();
+
+api.use(cors({
+    origin: "http://localhost:3001",
+}));
 
 const router = Router();
 router.get("/hello", (req, res) => res.send("Hello World!"));

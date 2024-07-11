@@ -20,8 +20,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
-
 app.use('/search', require('./routes/search'));
 app.use('/add', require('./routes/add'));
 app.use('/update', require('./routes/update'));

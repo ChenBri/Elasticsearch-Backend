@@ -21,12 +21,10 @@ async function update(req, res) {
         query = req.body.query;
     }
 
-    console.log(query);
-    console.log("----------------------------------------------------");
     if (!query) {
         return res.status(400).json({ 'error': "No query was selected." });
     }
-    console.log(query);
+
     const data = await client.updateByQuery(query);
 
     return res.json({ status: "success", data });

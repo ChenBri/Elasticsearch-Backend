@@ -23,7 +23,6 @@ The front-end is also deployed on Netlify and can be accessed at [elasticsearch-
 
 ---
 ## How to run:
-How to Run
 
 ### npm start
 Start the Application

@@ -24,16 +24,17 @@ The front-end is also deployed on Netlify and can be accessed at [elasticsearch-
 ---
 ## How to run:
 How to Run
-#Start the Application
-npm start
+
+### npm start
+Start the Application
 Starts the application using Node.js. The server will run as specified in ./bin/www.
 
+### npm run dev
 Development Mode
-npm run dev
 Runs the app in development mode using nodemon to automatically restart the server when changes are detected. Open http://localhost:3000 to view it in your browser.
 
+### npm run build
 Production Build
-npm run build
 Builds the app for production using webpack. The build will be optimized for the best performance.
 
 The build is minified, and the filenames include hashes.

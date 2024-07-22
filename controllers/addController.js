@@ -19,11 +19,11 @@ async function add(req, res) {
     } else {
         information = req.body;
     }
-    console.log(information);
+
     if (!information) {
         return res.status(400).json({ 'error': "No query was selected" });
     }
-    console.log(information);
+
     let countSearch = await client.search({
         "index": "sample",
         "body": {

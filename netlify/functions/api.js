@@ -11,7 +11,7 @@ api.use(cors({
 }));
 
 const router = Router();
-router.get("/hello", (req, res) => res.send("Hello World!"));
+router.get("/hello", (req, res) => res.send("Hello World!!!"));
 
 router.post('/search', require('./../../controllers/searchController'));
 router.post('/add', require('./../../controllers/addController'));
